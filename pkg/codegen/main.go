@@ -6,14 +6,14 @@ import (
 	controllergen "github.com/rancher/wrangler/pkg/controller-gen"
 	"github.com/rancher/wrangler/pkg/controller-gen/args"
 
-	v1 "github.com/rancher/cis-operator/pkg/apis/cis.cattle.io/v1"
-	"github.com/rancher/cis-operator/pkg/crds"
+	v1 "github.com/rancherfederal/stig-operator/pkg/apis/cis.cattle.io/v1"
+	"github.com/rancherfederal/stig-operator/pkg/crds"
 )
 
 func main() {
 	os.Unsetenv("GOPATH")
 	controllergen.Run(args.Options{
-		OutputPackage: "github.com/rancher/cis-operator/pkg/generated",
+		OutputPackage: "github.com/rancherfederal/stig-operator/pkg/generated",
 		Boilerplate:   "scripts/boilerplate.go.txt",
 		Groups: map[string]args.Group{
 			"cis.cattle.io": {

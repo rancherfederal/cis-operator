@@ -1,19 +1,29 @@
-# cis-operator
+# STIG Operator
 
-This is an operator that can run on a given Kubernetes cluster and provide ability to run security scans
-as per the CIS benchmarks, on the cluster.
+The stig-validator-operator is a group of controllers that runs within an RKE2 Kubernetes cluster.
+It provides a means to deploy and manage a scanner to report on compliance to the RKE2 STIG.
+
+The STIG Validator Controller checks the RKE2 clusters configuration against the criteria
+defined for it in the RKE2 STIG as developed by RancherFederal along side DISA.
+
+When the controller starts it will create a default stig-rke2 CR.
 
 ## Building
 
 `make`
 
-
 ## Running
 
+NOTE: This is future state.  The application entry point will be renamed eventually.
+
+Current state:
 `./bin/cis-operator`
 
+Future state:
+`./bin/stig-operator`
+
 ## License
-Copyright (c) 2019 [Rancher Labs, Inc.](http://rancher.com)
+Copyright (c) 2022 [Rancher Federal, Inc.](http://rancher.com)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

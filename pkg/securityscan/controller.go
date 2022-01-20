@@ -27,10 +27,10 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	cisoperatorapiv1 "github.com/rancher/cis-operator/pkg/apis/cis.cattle.io/v1"
-	cisoperatorctl "github.com/rancher/cis-operator/pkg/generated/controllers/cis.cattle.io"
-	cisoperatorctlv1 "github.com/rancher/cis-operator/pkg/generated/controllers/cis.cattle.io/v1"
-	"github.com/rancher/cis-operator/pkg/securityscan/scan"
+	cisoperatorapiv1 "github.com/rancherfederal/stig-operator/pkg/apis/cis.cattle.io/v1"
+	cisoperatorctl "github.com/rancherfederal/stig-operator/pkg/generated/controllers/cis.cattle.io"
+	cisoperatorctlv1 "github.com/rancherfederal/stig-operator/pkg/generated/controllers/cis.cattle.io/v1"
+	"github.com/rancherfederal/stig-operator/pkg/securityscan/scan"
 )
 
 type Controller struct {

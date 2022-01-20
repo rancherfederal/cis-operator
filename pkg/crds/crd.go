@@ -6,10 +6,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	cisoperator "github.com/rancher/cis-operator/pkg/apis/cis.cattle.io/v1"
 	"github.com/rancher/wrangler/pkg/crd"
 	_ "github.com/rancher/wrangler/pkg/generated/controllers/apiextensions.k8s.io" //using init
 	"github.com/rancher/wrangler/pkg/yaml"
+	cisoperator "github.com/rancherfederal/stig-operator/pkg/apis/cis.cattle.io/v1"
 	apiext "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
