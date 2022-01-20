@@ -8,7 +8,7 @@ cd $(dirname $0)/..
 mkdir -p dist/artifacts
 cp bin/cis-operator dist/artifacts/cis-operator${SUFFIX}
 
-IMAGE=${REPO}/cis-operator:${TAG}
+IMAGE=${REPO}/stig-operator:${TAG}
 DOCKERFILE=package/Dockerfile
 if [ -e ${DOCKERFILE}.${ARCH} ]; then
     DOCKERFILE=${DOCKERFILE}.${ARCH}

@@ -21,8 +21,8 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	cisoperatorapiv1 "github.com/rancher/cis-operator/pkg/apis/cis.cattle.io/v1"
-	cisoperator "github.com/rancher/cis-operator/pkg/securityscan"
+	cisoperatorapiv1 "github.com/rancherfederal/stig-operator/pkg/apis/cis.cattle.io/v1"
+	cisoperator "github.com/rancherfederal/stig-operator/pkg/securityscan"
 )
 
 var (
@@ -34,8 +34,8 @@ var (
 	metricsPort          string
 	alertSeverity        string
 	debug                bool
-	securityScanImage    = "rancher/security-scan"
-	securityScanImageTag = "v0.2.1"
+	securityScanImage    = "rancherfederal/security-scan"
+	securityScanImageTag = "stig-v1"
 	sonobuoyImage        = "rancher/sonobuoy-sonobuoy"
 	sonobuoyImageTag     = "v0.16.3"
 	clusterName          string
