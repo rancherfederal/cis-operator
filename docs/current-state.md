@@ -23,6 +23,8 @@ The following 2 scrips run the sonobuoy command against the kube-bench generated
 * [run.sh](https://github.com/rancherfederal/security-scan/blob/master/package/run.sh)
 * [run_sonohuoy_plugin.sh](https://github.com/rancherfederal/security-scan/blob/master/package/run_sonobuoy_plugin.sh)
 
+The results are outputted in json format.
+
 ### Architecture
 
 Current cis-benchmark operator architecture:
@@ -33,6 +35,7 @@ Existing repos:
 * [rancher/security-scan](https://github.com/rancher/security-scan)
 * [vmware-tanzu/sonobuoy](https://github.com/vmware-tanzu/sonobuoy)
 * [vmware-tanzu/sonobuoy-plugins](https://github.com/vmware-tanzu/sonobuoy-plugins/blob/main/cis-benchmarks/README.md)
+* [kube-hunter sonobuoy plugin](https://github.com/vmware-tanzu/sonobuoy-plugins/tree/main/kube-hunter)
 
 Images used:
 ```yaml
@@ -61,8 +64,8 @@ I assume this is the location to create specific ‘STIG’ configs that can the
 
 
 ### Existing Documentation
-https://github.com/rancher/charts/blob/dev-v2.6/charts/rancher-cis-benchmark/2.0.2/app-readme.md
-https://github.com/aquasecurity/kube-bench/blob/main/docs/controls.md
+* https://github.com/rancher/charts/blob/dev-v2.6/charts/rancher-cis-benchmark/2.0.2/app-readme.md
+* https://github.com/aquasecurity/kube-bench/blob/main/docs/controls.md
 
 
 Misc Sites with good info:
