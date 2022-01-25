@@ -4,7 +4,7 @@ The stig-validator-operator is a group of controllers that runs within an RKE2 K
 It provides a means to deploy and manage a scanner to report on compliance to the RKE2 STIG.
 
 The STIG Validator Controller checks the RKE2 clusters configuration against the criteria
-defined for it in the RKE2 STIG as developed by RancherFederal along side DISA.
+defined for it in the RKE2 STIG as developed by RancherFederal alongside DISA.
 
 When the controller starts it will create a default stig-rke2 CR.
 
