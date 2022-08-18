@@ -219,6 +219,9 @@ func New(clusterscan *cisoperatorapiv1.ClusterScan, clusterscanprofile *cisopera
 							Name:      `etc-group`,
 							MountPath: `/etc/group`,
 						}, {
+							Name:      `etc-rancher`,
+							MountPath: `/etc/rancher`,
+						}, {
 							Name:      `var-log`,
 							MountPath: `/var/log/`,
 						}, {
