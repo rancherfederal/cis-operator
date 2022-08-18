@@ -144,6 +144,13 @@ func New(clusterscan *cisoperatorapiv1.ClusterScan, clusterscanprofile *cisopera
 							},
 						},
 					}, {
+						Name: `etc-rancher`,
+						VolumeSource: corev1.VolumeSource{
+							HostPath: &corev1.HostPathVolumeSource{
+								Path: `/etc/rancher`,
+							},
+						},
+					}, {
 						Name: `var-log`,
 						VolumeSource: corev1.VolumeSource{
 							HostPath: &corev1.HostPathVolumeSource{
